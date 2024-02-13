@@ -17,6 +17,7 @@ java {
 }
 
 repositories {
+
 	mavenCentral()
 }
 
@@ -26,11 +27,13 @@ dependencies {
 	implementation 'com.google.cloud:spring-cloud-gcp-starter-storage'
 	implementation 'com.google.cloud:spring-cloud-gcp-starter'
 	implementation group: 'com.google.cloud', name: 'spring-cloud-gcp-starter-sql-postgresql', version: '5.0.2'
-	implementation group: 'com.google.cloud.tools', name: 'appengine-maven-plugin', version: '2.8.0'
+	implementation group: 'com.google.cloud.tools', name: 'appengine-gradle-plugin', version: '2.8.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	runtimeOnly 'org.postgresql:postgresql'
 	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.30'
 }
+
+
 
 dependencyManagement {
 	imports {
