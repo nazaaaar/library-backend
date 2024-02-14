@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "theta-trees-414219",
+  "private_key_id": "d6fdea922f231ff7eff539d2ee80595c67ceca00",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDGj5qltSLRzbfD\noyOKOjTvi98LfwRYClA8oy1r/3EYtbcpVcGPmdK3IAjWvaJvcumm09yT1Ux/CXFk\nhWom69POzDkhxbf28F9oG74xvuEvK8BEcWDaqUzjLRy5O5DYyyZ+q61OGMvAAJFj\n0T/tu0eBdj0ELCjY0CKWv7rWQEAcD3KY7d8caoAOV2lcFkbO3hcB4HqTXn9ow4WZ\n6xH6RsZxd0r0F7q33Ve3MMgKF6VCIlUK31BOTaGilfQ5MLletz7fa3Y2aE+zjYNu\nAX3M7nd7GSu33776bMYmRBQb93qHVVXbqotVI2jPBwckoeTRVVL22VaJC/VpIgKt\n4qSwT0ijAgMBAAECggEAA1HRTGXr2sVtW2hLJtDJo8ZF3gOrR0GHjTaj2Bi22P/o\nu63YWkCVxO6p1yqSdaSJLXsrRo7GrvUHH/QZuI7cGqqlZeAlWYvekcys8Fii8SPy\ncfJ8o7Xi4tq/49o6wLUcw/oLdVvKxD9ThESyTz+AoYnK2Vqs+tBNU7yJhh11ikKG\n8D6sryhyFtXB8pqnPIbl1X+H378BhvLqVToWEIbTTvPBnENmnjmtkm5ra6butKgf\ndeFL6ioYTSF8A5RVGSC8jqRpH7Ry3CDK74SyBzdziM6HOuwA0oIoCV5MEbKQ0Kx0\ndi4Kgl+VbdA3ZRq5GuMXnit0Q+gpehk0RlRS11zwOQKBgQD7aFPhts83kX9Ri7Pf\niKIrq6PQ8Yv1lDRsaa+FnumnrZS+gcYO1DvbR4cJyBm4V3UB09KT+RjDGbLZLxJE\nYFNIqESbxELn5eIdkutRnW+ZFndnUOj/LDlp85JpSmXyqnZYX44ZZoDjyuxtyRF0\nHE+bQ38Wz9g1DKWWImaidJZvRwKBgQDKMCWSbOWuXtE2VluWRfgTvkfeXy7X4RKT\ngjkQ2QOYAJ5FGf9glhGHUG8h2lNbX06rnG6GuEVZdWOACc3sg4fIkM1Xz1DPVJC/\nRSvGLg8+SLw9F8fYh8y9RdpgIWfSVylWH2QrbfN8Wy59AugCXFiLZu7TOf96/CRU\nWr7ypvChxQKBgDHrXESEPQ8Gl+ZEPBoVkkXjleqGG8lOfT5NmemJTVHbGJ7fO8l0\nANKgmEKr9ddxni0Xt0dkfbM3phiTzSfAjKjvqHfZd4N+VPCUXJ9fCGq4WEsueKU6\nTcgo8hhwCmAt0sPnbVrDzLHueBWwiAOrH29v7otEB+U4tqRh/kkhp0E/AoGAWv3s\nCsfDXgQB94hJ04lNqeT6hxMjC7iZGZWDhReFTIUKtWKL0bX30YPbX8rXtMlhqE3Q\nWATaAPaZfufqqsRO+W5hW2FLpuMR+WJx3tCfv5IQVRY8tC/5bjzfmF+wT7M2QTID\nbKAg8hg/BbenHljc6G+8j4cMeRa8atIkGSQUK1kCgYEA4SaQnmfGJpSVFzINIHo1\n1r6RZc1NL80bny5pzjdjNq3qQW8o82giwILgru7fByRCvAPZ5Xh+lcbde9LcCSkJ\nRscApllywjGFODTxDBR9R6pnaZpu/cSpeUyEEwCUmcIVrAulTJ6rDPSgWg8diyGv\npblbgssFcSU/E3pcNNv50/A=\n-----END PRIVATE KEY-----\n",
+  "client_email": "nazar-392@theta-trees-414219.iam.gserviceaccount.com",
+  "client_id": "118249897667998315260",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nazar-392%40theta-trees-414219.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
