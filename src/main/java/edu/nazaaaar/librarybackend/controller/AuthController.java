@@ -1,6 +1,5 @@
 package edu.nazaaaar.librarybackend.controller;
 
-import edu.nazaaaar.librarybackend.dao.AuthResponseDTO;
 import edu.nazaaaar.librarybackend.dao.RegisterDto;
 import edu.nazaaaar.librarybackend.dao.UserRepository;
 import edu.nazaaaar.librarybackend.dao.LoginDto;
@@ -10,8 +9,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
-import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -27,12 +24,17 @@ public class AuthController {
     }
 
     @PostMapping("login")
-    public ResponseEntity<String> login(@RequestBody LoginDto loginDto){
+    public ResponseEntity<Long> login(@RequestBody LoginDto loginDto){
         Optional<UserEntity> usr = userRepository.findByUsername(loginDto.getUsername());
-        if (usr.isPresent())
-            if (Objects.equals(usr.get().getPassword(), loginDto.getPassword())) return new ResponseEntity<>("Success", HttpStatus.OK);
-        return new ResponseEntity<>("Fail", HttpStatus.UNAUTHORIZED);
+        if (usr.isPresent()) {
+            if (Objects.equals(usr.get().getPassword(), loginDto.getPassword())) {
+                Long userId = usr.get().getId();
+                return new ResponseEntity<>(userId, HttpStatus.OK);
+            }
+        }
+        return new ResponseEntity<>(-1L, HttpStatus.UNAUTHORIZED); // Return -1 if login fails
     }
+
 
     @PostMapping("register")
     public ResponseEntity<String> register(@RequestBody RegisterDto registerDto) {
@@ -44,7 +46,7 @@ public class AuthController {
         user.setUsername(registerDto.getUsername());
         user.setAddress(registerDto.getAddress());
         user.setPassword(registerDto.getPassword());
-        user.setPIB(registerDto.getPIB());
+        user.setPib(registerDto.getPIB());
 
         userRepository.save(user);
 

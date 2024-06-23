@@ -5,6 +5,7 @@ services:
     environment:
       POSTGRES_USER: nazaaaar
       POSTGRES_PASSWORD: loremipsum
+      POSTGRES_DB: library
       PGDATA: /data/postgres
     volumes:
       - db:/data/postgres

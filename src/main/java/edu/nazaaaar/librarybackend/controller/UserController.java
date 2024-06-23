@@ -120,13 +120,11 @@ public class UserController {
             List<UserBookReading> userBookReadings = userBookReadingRepository.findByUser(user);
             Map<String, Integer> genreCount = new HashMap<>();
 
-            // Count occurrences of each genre
             for (UserBookReading userBookReading : userBookReadings) {
                 String genre = userBookReading.getBook().getGenre();
                 genreCount.put(genre, genreCount.getOrDefault(genre, 0) + 1);
             }
 
-            // Sort genres by occurrence count in descending order
             List<String> favoriteGenres = genreCount.entrySet().stream()
                     .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
                     .map(Map.Entry::getKey)
@@ -159,5 +157,14 @@ public class UserController {
         }
     }
 
+    @GetMapping("/all")
+    public ResponseEntity<List<UserEntity>> getAllUsers() {
+        List<UserEntity> users = userRepository.findAll();
+        if (users.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(users, HttpStatus.OK);
+        }
+    }
 
 }

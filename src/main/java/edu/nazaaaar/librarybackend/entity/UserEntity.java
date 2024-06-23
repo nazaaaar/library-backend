@@ -12,7 +12,7 @@ public class UserEntity {
     private Long id;
 
     private String username;
-    private String PIB;
+    private String pib;
     private String password;
     private String address;
 
@@ -24,10 +24,10 @@ public class UserEntity {
     public UserEntity() {
     }
 
-    public UserEntity(Long id, String username, String PIB, String password, String address) {
+    public UserEntity(Long id, String username, String pib, String password, String address) {
         this.id = id;
         this.username = username;
-        this.PIB = PIB;
+        this.pib = pib;
         this.password = password;
         this.address = address;
     }
@@ -49,12 +49,13 @@ public class UserEntity {
         this.username = username;
     }
 
-    public String getPIB() {
-        return PIB;
+
+    public String getPib() {
+        return pib;
     }
 
-    public void setPIB(String PIB) {
-        this.PIB = PIB;
+    public void setPib(String PIB) {
+        this.pib = PIB;
     }
 
     public String getPassword() {
